@@ -376,6 +376,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 **Philipp Kaintoch**  
 GitHub: [@philius19](https://github.com/philius19)
+E-Mail: p.kaintoch@uni-muenster.de
 
 For questions, suggestions, or collaborations, please open an issue or contact the maintainer.
 
