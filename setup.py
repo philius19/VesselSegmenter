@@ -17,11 +17,11 @@ setup(
     name="vessel-segmenter",
     version="1.0.0",
     author="Philipp Kaintoch",
-    author_email="your.email@domain.com",  # Update as needed
+    author_email="p.kaintoch@uni-muenster.de",  
     description="3D Vascular Network Segmentation Pipeline for Confocal Microscopy",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/philius19/VesselSegmenter",  # Update when created
+    url="https://github.com/philius19/VesselSegmenter",  
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
