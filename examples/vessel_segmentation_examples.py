@@ -15,7 +15,7 @@ import glob
 from pathlib import Path
 from typing import Dict, List
 
-from vessel_segmentation_pipeline import (
+from vesselsegmenter import (
     VesselSegmentationPipeline, 
     SegmentationConfig, 
     ConfigTemplateManager,

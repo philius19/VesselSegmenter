@@ -70,12 +70,7 @@ def check_vesselsegmenter():
     print("\nChecking VesselSegmenter package...")
     
     try:
-        # Add src to path if needed
-        src_path = Path(__file__).parent.parent / "src"
-        if src_path.exists():
-            sys.path.insert(0, str(src_path))
-        
-        from vessel_segmentation_pipeline import (
+        from vesselsegmenter import (
             SegmentationConfig,
             VesselSegmentationPipeline,
             ConfigTemplateManager,
@@ -140,12 +135,7 @@ def run_simple_test():
         import tempfile
         import numpy as np
         
-        # Add src to path if needed
-        src_path = Path(__file__).parent.parent / "src"
-        if src_path.exists():
-            sys.path.insert(0, str(src_path))
-        
-        from vessel_segmentation_pipeline import SegmentationConfig, VesselSegmentationPipeline
+        from vesselsegmenter import SegmentationConfig, VesselSegmentationPipeline
         
         # Create synthetic test data
         test_image = np.random.rand(10, 50, 50).astype(np.float32)

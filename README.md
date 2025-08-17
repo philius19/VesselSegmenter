@@ -35,10 +35,15 @@ VesselSegmenter provides accurate segmentation of vascular networks from confoca
 ## Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/philius19/VesselSegmenter.git
 cd VesselSegmenter
-pip install -r requirements.txt
+
+# Install dependencies and package in development mode
 pip install -e .
+
+# Validate installation
+python scripts/validate_installation.py
 ```
 
 ## Quick Start
@@ -46,7 +51,7 @@ pip install -e .
 ### Basic Usage
 
 ```python
-from src.vessel_segmentation_pipeline import VesselSegmentationPipeline, SegmentationConfig
+from vesselsegmenter import VesselSegmentationPipeline, SegmentationConfig
 
 # Create configuration
 config = SegmentationConfig()
@@ -143,7 +148,7 @@ for file_path in tiff_files:
 ### Standard Configurations
 
 ```python
-from src.vessel_segmentation_pipeline import create_standard_configs
+from vesselsegmenter import VesselSegmentationPipeline, create_standard_configs
 
 configs = create_standard_configs()
 
@@ -197,6 +202,8 @@ plotMeshMD(MD, 'surfaceMode', 'intensity');
 ### Parameter Optimization
 
 ```python
+from vesselsegmenter import VesselSegmentationPipeline, SegmentationConfig
+
 # Test different configurations
 configs_to_test = {
     'conservative': SegmentationConfig(gamma=1.5, max_components=1),
@@ -246,11 +253,11 @@ The `examples/` directory contains seven comprehensive tutorials:
 
 ```python
 # Run individual examples
-from examples.vessel_segmentation_examples import basic_usage_example
+from vesselsegmenter.examples.vessel_segmentation_examples import basic_usage_example
 basic_usage_example()
 
 # Run complete tutorial
-from examples.vessel_segmentation_examples import main
+from vesselsegmenter.examples.vessel_segmentation_examples import main
 main()  # Interactive tutorial covering all features
 ```
 
